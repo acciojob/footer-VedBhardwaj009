@@ -1,1 +1,119 @@
-/* your code here */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0e0e0e;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  background-color: #101010;
+  color: #fff;
+}
+
+.footer-brand {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-brand h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.contact-section p {
+  margin: 8px 0;
+  color: #bbb;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-basis: 100%;
+  justify-content: flex-start;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #555;
+  background-size: cover;
+  transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: #1d9bf0;
+}
+
+.facebook {
+  background-image: url('facebook-icon-url'); /* Add actual Facebook icon URL */
+}
+
+.twitter {
+  background-image: url('twitter-icon-url'); /* Add actual Twitter icon URL */
+}
+
+.instagram {
+  background-image: url('instagram-icon-url'); /* Add actual Instagram icon URL */
+}
+
+.linkedin {
+  background-image: url('linkedin-icon-url'); /* Add actual LinkedIn icon URL */
+}
+
+.youtube {
+  background-image: url('youtube-icon-url'); /* Add actual YouTube icon URL */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section,
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
